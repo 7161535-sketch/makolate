@@ -1,0 +1,27 @@
+{
+  "name": "makolet",
+  "version": "1.0.0",
+  "description": "מערכת ניהול חנות מכולת - מלאי מחסן ומדף, קליטת תעודות משלוח, התראות וכרטסת לקוחות",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node scripts/test.js",
+    "users": "node scripts/list-users.js",
+    "agent": "node agent/pos-agent.js",
+    "agent:discover": "node agent/pos-agent.js --discover"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "fast-xml-parser": "^4.5.1",
+    "multer": "^2.0.1",
+    "pdfjs-dist": "^6.4.299"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
